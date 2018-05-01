@@ -45,3 +45,8 @@ kubectl create -f mongo-pv.yml -n {namespace}
 kubectl create -f mongo-pvc.yml -n {namespace}
 
 note: please provide the ebs volume id and create the pv.
+
+
+Autoscale the deployment by following command
+
+kubectl autoscale deployment $(kubectl get deployments | grep -a {deployment name} | awk '{print $1}') --cpu-percent=50 --min=1 --max=1

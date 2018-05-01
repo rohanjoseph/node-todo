@@ -5,8 +5,8 @@ metadata:
     name: nginx
   name: nginx
   annotations:
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:eu-central-1:480901666750:certificate/7a65ae85-dd57-4fc0-b911-f0b7fb78f54d
-    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert:""
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: ""
 spec:
   type: LoadBalancer
   ports:
